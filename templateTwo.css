@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
     outline: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
   }
   ul{
     list-style: none;
@@ -88,6 +91,7 @@
     background-image: url('https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/landing.jpg');
     background-size: cover;
     position: relative;
+    overflow: hidden;
   }
   @media (min-width:768px) {
   .image:before, .image:after {
@@ -111,6 +115,7 @@
     border-color: transparent white white transparent;
     right: 2rem;
   }
+ 
 }
   .image .overlay {
     position: absolute;
@@ -130,6 +135,7 @@
   
   .header .logo {
     height: 2.5rem;
+    cursor: pointer;
   }
   .header .container ul{
     display: flex;
@@ -238,8 +244,14 @@ width: 100%;
     border-radius: 50%;
     border: .25rem solid white;
     position: relative;
+    cursor: pointer;
   }
-  
+  .header .container .icon2:hover{
+    border-color:gray;
+  }
+  .header .container .icon2:hover::after{
+    background-color: gray;
+  }
   .header .container .icon2:after {
     content: "";
     width: .25rem;
@@ -318,6 +330,7 @@ width: 100%;
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    cursor: pointer;
   }
   .image .shape div:not(.shape2) {
     border: 1px solid white;
@@ -569,11 +582,15 @@ font-weight: lighter;
     width: fit-content;
     margin: 2rem auto;
   }
+  .portfolio .button:hover a{
+    color:#1787e0
+  }
   /*start video*/
   .video {
     position: relative;
     margin-top: var(--main-margin);
     margin-bottom: var(--main-margin);
+    /* overflow: hidden; */
   }
   .video:before {
     position: absolute;
@@ -617,6 +634,9 @@ font-weight: lighter;
     padding: 8px 20px;
     color: white;
     border: none;
+  }
+  .video .contain button:hover{
+    color:#1787e0;
   }
   /*end video*/
   /*start about*/
@@ -986,6 +1006,10 @@ position: relative;
     border: 1px solid var(--main-color);
     margin-bottom: 50px;
     background: white;
+    cursor: pointer;
+  }
+  .pricing ul li:nth-child(5):hover a{
+    color: #1787e0;
   }
   .pricing .section-pric a {
     border-color: var(--main-color);
@@ -1002,6 +1026,9 @@ position: relative;
     display: block;
     width: fit-content;
     margin: 2rem auto 0;
+  }
+  .pricing .cont a:hover{
+    color:#1787e0;
   }
   .pricing .cont {
     margin-top: 4rem;
@@ -1090,6 +1117,10 @@ position: relative;
     border-style: none;
     width: 150px;
   }
+  .subscribe .container form .sub input:hover{
+    background-color: #1787e0;
+    cursor: pointer;
+  }
   .subscribe .container .box1  {
     flex-basis: 45%;
   }
@@ -1155,6 +1186,9 @@ order: 1;
     position: absolute;
     right: 0;
     top: 100%;
+  }
+  .contact .container .section-cont form input:nth-child(4):hover{
+    color:#1787e0;
   }
   @media (max-width:767.98px) {
   .contact .container .section-cont .arriv{
@@ -1236,6 +1270,10 @@ font-style: italic;
   footer .container .icons i {
     margin-left: 20px;
     margin-right: 20px;
+  }
+  footer .container .icons i:hover{
+    color:var(--main-color);
+    cursor: pointer;
   }
   footer .container p:nth-of-type(2) {
     color: white;
