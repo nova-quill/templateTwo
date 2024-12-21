@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>second project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="templateTwo.css">
 </head>
 <body>
@@ -11,8 +15,10 @@
   <div class="overlay">
   </div>
   <div class="header" id="home">
-    <div class="container">
-      <img class="logo" src="  https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/logo.png" alt="testing">
+    <div class="container main-container">
+      <a>
+      <img class="logo" src="  https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/logo.png" alt="logo">
+    </a>
       <div class="formi">
         <span class="form">
           <span></span>
@@ -43,17 +49,17 @@
         <p> Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt. </p>
       </div>
     </div>
-    <div class="shape">
-      <div></div>
-      <div class="shape2"></div>
-      <div></div>
-    </div>
+  </div>
+  <div class="shape">
+    <div></div>
+    <div class="shape2"></div>
+    <div></div>
   </div>
 </div>
 <!--start services-->
 <div class="services" id="services">
   <div class="container">
-    <h1> SERVICES </h1>
+    <h1 class="special-class "> SERVICES </h1>
     <p> Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt. </p>
     <div class="content-services">
       <div class="col">
@@ -89,35 +95,39 @@
         </div>
       </div>
     </div>
-    <div class="ad">
-      <div class="overlay"></div>
-      <div class="image-ad">
-        <img src="    https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/mobile.png   " alt="testing" class="img-ad">
+  </div>
+</div>
+<!-- start ad -->
+<div class="ad">
+  <div class="overlay"></div>
+  <div class="containerImgServ">
+  <div class="image-ad">
+    <img src="    https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/mobile.png   " alt="testing" class="img-ad">
+  </div>
+  <div class="serv-ad">
+    <p> OUR DESIGN COMES WITH...</p>
+    <div class="content-ad">
+      <div class="offer">
+        <i class="fas fa-desktop fa-3x"> </i>
+        <h3> Responsive Design </h3>
       </div>
-      <div class="serv-ad">
-        <p> OUR DESIGN COMES WITH...</p>
-        <div class="content-ad">
-          <div class="offer">
-            <i class="fas fa-desktop fa-3x"> </i>
-            <h3> Responsive Design </h3>
-          </div>
-          <div class="offer">
-            <i class="fas fa-desktop fa-3x"></i>
-            <h3> Modern And Clean Design</h3>
-          </div>
-          <div class="offer">
-            <i class="fas fa-desktop fa-3x"> </i>
-            <h3> Clean Code</h3>
-          </div>
-          <div class="offer">
-            <i class="fas fa-desktop fa-3x"> </i>
-            <h3> Browser Friendly</h3>
-          </div>
-        </div>
+      <div class="offer">
+        <i class="fas fa-desktop fa-3x"></i>
+        <h3> Modern And Clean Design</h3>
       </div>
+      <div class="offer">
+        <i class="fas fa-desktop fa-3x"> </i>
+        <h3> Clean Code</h3>
+      </div>
+      <div class="offer">
+        <i class="fas fa-desktop fa-3x"> </i>
+        <h3> Browser Friendly</h3>
+      </div>
+    </div>
     </div>
   </div>
 </div>
+ <!-- end ad -->
 <!--start portfolio-->
 <div class="portfolio" id="portfolio">
   <div class="container">
@@ -203,6 +213,7 @@
 <div class="video">
   <video autoplay loop muted>
     <source src="https://outils-javascript.aliasdmc.fr/img/videos/mov_bbb.webm" type="video/webm">
+    
   </video>
   <div class="contain">
     <h3> super awesome video here </h3>
@@ -217,11 +228,12 @@
     <h2 class="special-class"> ABOUT US </h2>
     <p> Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
   </div>
+  <div class="containerImg">
+    <img src="https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/about.png" alt="testing">
+  </div>
   <div class="section-about">
-    <div class="content">
-      <img src="     https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/about.png" alt="testing">
-
-      <ul class="main-ul">
+      <div class="container">
+        <div class="main-cont">
         <ul>
           <li class="fas fa-mug-hot"></li>
           <li> 1.263</li>
@@ -242,7 +254,7 @@
           <li> 17</li>
           <li>awards recevied </li>
         </ul>
-      </ul>
+      </div>
     </div>
   </div>
 </div>
@@ -278,16 +290,33 @@
         <h3> SKILLS </h3>
         <p> Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt. </p>
       </div>
-      <ul>
-        <li> ADOBE </li>
-        <li> </li>
-        <li> HTML & CSS</li>
-        <li class="li85"></li>
-        <li> JAVASCRIPT</li>
-        <li class="li80"></li>
-        <li> PHP </li>
-        <li></li>
-      </ul>
+      <div class="skillsElement">
+        <div class="element">
+          <h4>ADOBE </h4>
+          <div class="progress">
+            <span style="width:90%" data-prog="90%"></span>
+          </div>
+        </div>
+        <div class="element">
+          <h4>HTML & CSS </h4>
+          <div class="progress">
+            <span style="width:85%" data-prog="85%"></span>
+          </div>
+        </div>
+        <div class="element">
+          <h4>JAVASCRIPT </h4>
+          <div class="progress">
+            <span style="width:80%" data-prog="80%"></span>
+          </div>
+        </div>
+        <div class="element">
+          <h4>PHP </h4>
+          <div class="progress">
+            <span style="width:90%" data-prog="90%"></span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -295,10 +324,12 @@
 <!--end skills-->
 <!-- start quote-->
 <div class="awes">
+  <div class="container">
   <div class="all">
     <q> accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt. </q>
     <p> Jone Doe </p>
   </div>
+</div>
 </div>
 <!-- end quote   -->
 <!--start pricing-->
