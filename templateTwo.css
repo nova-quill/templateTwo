@@ -505,19 +505,30 @@ margin-top: 3rem;
     color: white;
   }
   .portfolio .images {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); */
+    display: flex;
+    flex-wrap: wrap;
   }
   .portfolio .images img {
     max-width: 100%;
     transition: 0.3s;
   }
   
+  @media (min-width:768px) {
+    .portfolio .images > div {
+      flex-basis: 50%;
+    }
+  }
+  @media (min-width:1200px) {
+    .portfolio .images > div {
+      flex-basis: 25%;
+    }
+  }
   .portfolio .images div {
     position: relative;
     overflow: hidden;
   }
-  
   .portfolio .images div div {
     position: absolute;
     transition: transform 0.3s linear;
@@ -979,6 +990,7 @@ position: relative;
   .pricing .section-pric a {
     border-color: var(--main-color);
     text-transform: capitalize;
+    color:#266699;
   }
   .pricing .cont a {
     border-color: var(--main-color);
