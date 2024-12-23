@@ -83,10 +83,10 @@
   .special-class:after {
     content: "";
     width: 6rem;
-    height: .15rem;
+    height: .1rem;
     background-color: black;
     position: absolute;
-    bottom: -100%;
+    bottom: -101%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -123,7 +123,6 @@
 
   .image {
     min-height: 100vh;
-    /* background-image: url('https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/landing.jpg'); */
     background-image: url("./photps/landing.jpg");
     background-size: cover;
     position: relative;
@@ -361,15 +360,6 @@ width: 100%;
     padding-top: var(--main-padding, 1.25rem);
   }
   
-  .services .container h1 {
-    /* font-weight: normal;
-    font-size: 35px;
-    position: relative;
-    padding-bottom: -20px;
-    margin-bottom: var(--main-margin,4.5rem);
-    text-align: center; */
-  }
- 
   @media (min-width:768px) {
     .services .container .content-services {
       grid-template-columns: repeat(auto-fit,minmax( 450px,1fr));
@@ -425,7 +415,6 @@ width: 100%;
   /*end services*/
   /* start ad */
  .ad {
-    /* background-image: url("https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/design-features.jpg"); */
     background-image: url('./photps/design-features.jpg');
     background-size: cover;
     height: 36rem;
@@ -619,9 +608,7 @@ font-weight: lighter;
   /*end video*/
   /*start about*/
   .section-about {
-    /* background-image: url( "https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/stats.png"); */
     background-image: url("./photps/stats.png");
-
     background-size: cover;
     position: relative;
     width: 100%;
@@ -853,7 +840,6 @@ position: relative;
   /*end skills*/
   /*start awes  */
   .awes {
-    /* background-image: url("https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/quote.jpg"); */
     background-image: url("./photps/quote.jpg");
     background-size: cover;
     position: relative;
@@ -990,7 +976,6 @@ position: relative;
   .subscribe {
     margin-top: var(--main-margin,4.5rem);
     padding: 6.5rem 0;
-    /* background-image: url("   https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/subscribe.jpg"); */
     background-image: url("./photps/subscribe.jpg");
     background-size: cover;
     text-align: center;
@@ -1160,7 +1145,6 @@ font-style: italic;
     padding-top: 20px;
     background-size: cover;
     position: relative;
-    /* background-image: url('https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/subscribe.jpg'); */
     background-image: url('./photps/subscribe.jpg');
   }
  
