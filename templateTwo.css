@@ -30,7 +30,8 @@
     --transparent-color: rgb(15 116 143 / 70%);
     --hover-color:#1787e0;
     --main-padding: 1.25rem;
-    --main-margin: 6.5rem;
+    /* --main-margin: 6.5rem; */
+    --main-margin: 4.5rem;
     --main-line: 2;
     --text-color: #888;
     --back-overlay: rgb(0 0 0 / 70%);
@@ -73,6 +74,11 @@
     margin: 0 auto 100px;
     text-align: center;
     font-size: .9rem;
+  }
+  @media (max-width:767.98px) {
+    .special-class + p {
+    font-size: 1.2rem;
+    }
   }
   .special-class:after {
     content: "";
@@ -644,7 +650,7 @@ font-weight: lighter;
     position: relative;
     margin-top: var(--main-margin,6.5rem);
     margin-bottom: var(--main-margin,6.5rem);
-    /* overflow: hidden; */
+    overflow: hidden;
   }
   .video:before {
     /* position: absolute;
@@ -699,7 +705,7 @@ font-weight: lighter;
     background-size: cover;
     position: relative;
     width: 100%;
-    padding:5rem;
+    padding:5rem 0;
   }
   .section-about::before {
     /* content: "";
