@@ -30,12 +30,15 @@
     --transparent-color: rgb(15 116 143 / 70%);
     --hover-color:#1787e0;
     --main-padding: 1.25rem;
-    /* --main-margin: 6.5rem; */
     --main-margin: 4.5rem;
     --main-line: 2;
     --text-color: #888;
     --back-overlay: rgb(0 0 0 / 70%);
   }
+  html {
+    scroll-behavior: smooth;
+  }
+ 
   /* start component classes */
   .flex-justbetween-center{
     display: flex;
@@ -54,16 +57,13 @@
     height: 100%;
     top: 0;
     left: 0;
-    /* z-index: -1; */
   }
   
   .special-class {
     font-weight: normal;
-    /* font-size: 35px; */
         font-size: 2.1rem;
     position: relative;
-    /* padding-bottom: -20px; */
-    margin-bottom: var(--main-margin,6.5rem);
+    margin-bottom: var(--main-margin,4.5rem);
     text-align: center;
   }
   .special-class + p {
@@ -82,14 +82,11 @@
   }
   .special-class:after {
     content: "";
-    /* width: 100px;
-    height: 2px; */
     width: 6rem;
     height: .1rem;
     background-color: black;
     position: absolute;
     bottom: -100%;
-    /* left: calc(50% - 50px); */
     left: 50%;
     transform: translateX(-50%);
   }
@@ -113,9 +110,6 @@
     background-color: var(--main-color, #19c8fa);
     border-color: transparent !important;
 }
-  html {
-    scroll-behavior: smooth;
-  }
  
   .container {
     padding-left: 1rem;
@@ -129,7 +123,8 @@
 
   .image {
     min-height: 100vh;
-    background-image: url('https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/landing.jpg');
+    /* background-image: url('https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/landing.jpg'); */
+    background-image: url("./photps/landing.jpg");
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -159,19 +154,10 @@
  
 }
   .image .overlay {
-    /* position: absolute;
-    width: 100%;
-    height: 100vh; */
     background-color:rgb(0 0 0 / 60%);
-
   }
-  
- 
   .header .container {
     min-height: 5rem;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     position: relative;
   }
   
@@ -180,9 +166,6 @@
     cursor: pointer;
   }
   .header .container ul{
-    /* display: flex;
-justify-content: space-between;
-align-items: center; */
 margin-right:1rem;
   }
   @media (max-width:767.98px){
@@ -199,9 +182,10 @@ width: 100%;
     transition: 0.3s;
     display: none;
   }
-  .header .container .form:hover + ul{
+  .header .container .form:hover + ul,.header .container ul.active{
     display: flex;
   }
+  
   .header .container .form:hover span{
     background-color: lightgray;
   }
@@ -229,10 +213,7 @@ width: 100%;
     content: "";
     width: 1.8rem;
     height: 2,5rem;
-    /* display: flex; */
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
     margin-right: .25rem;
     cursor: pointer;
   }
@@ -260,30 +241,18 @@ width: 100%;
   .header .container ul li a:hover {
     color: var(--main-color);
   }
-  .header .container ul li{
-    /* color: var(--main-color, #19c8fa); */
-    /* color: inherit; */
-  }
-  .header .container ul li:first-child {
-    /* border-bottom: .06rem solid var(--main-color); */
-  }
+  
   .header .container ul li.active{
     border-bottom: .06rem solid var(--main-color);
         color: var(--main-color, #19c8fa);
   }
   .header .container .formi {
     padding-right: .5rem;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
   }
   
   .header .container .icon {
     width: 30px;
     height: 40px;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
   }
   
   .header .container .icon1 {
@@ -350,7 +319,6 @@ width: 100%;
     margin-left: auto;
     color: white;
     text-align: left;
-    /* line-height: 1.6; */
     line-height: var(--main-line,2);
   }
   @media (min-width:768px) {
@@ -373,8 +341,6 @@ width: 100%;
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
-    /* display: flex; */
-    /* justify-content: center; */
     position: absolute;
     bottom: 2rem;
     left: 50%;
@@ -389,49 +355,21 @@ width: 100%;
   .image .shape div {
     border: 1px solid white;
   }
-  .image .shape :nth-child(2) {
-    /* background-color: var(--main-color, #19c8fa); */
-    /* margin-left: 10px;
-    margin-right: 10px; */
-  }
-  /* .image .shape div.active{
-        background-color: var(--main-color, #19c8fa);
-        border-color: transparent;
-  } */
+  
   /*start services*/
   .services {
     padding-top: var(--main-padding, 1.25rem);
   }
   
   .services .container h1 {
-    font-weight: normal;
+    /* font-weight: normal;
     font-size: 35px;
     position: relative;
     padding-bottom: -20px;
-    margin-bottom: var(--main-margin,6.5rem);
-    text-align: center;
+    margin-bottom: var(--main-margin,4.5rem);
+    text-align: center; */
   }
-  /* .services .container h1:before {
-    content: "";
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: 2px solid black;
-    position: absolute;
-    background-color: white;
-    bottom: calc(-100% - 7.5px);
-    left: calc(50% - 8px);
-    z-index: 1;
-  }
-  .services .container h1:after {
-    content: "";
-    width: 100px;
-    height: 2px;
-    background-color: black;
-    position: absolute;
-    bottom: -100%;
-    left: calc(50% - 50px);
-  } */
+ 
   @media (min-width:768px) {
     .services .container .content-services {
       grid-template-columns: repeat(auto-fit,minmax( 450px,1fr));
@@ -469,7 +407,7 @@ width: 100%;
   .services .container .content-services .content p {
     line-height: var(--main-line,2);
     color: var(--text-color,#888);
-    margin-bottom: var(--main-margin,6.5rem);
+    margin-bottom: var(--main-margin,4.5rem);
   }
   .services .container .content-services .content i {
     width: 60px;
@@ -487,7 +425,8 @@ width: 100%;
   /*end services*/
   /* start ad */
  .ad {
-    background-image: url("https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/design-features.jpg");
+    /* background-image: url("https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/design-features.jpg"); */
+    background-image: url('./photps/design-features.jpg');
     background-size: cover;
     height: 36rem;
     position: relative;
@@ -522,14 +461,7 @@ align-items: center;
       display: none;
     }
   }
- .ad .overlay {
-    /* position: absolute;
-    background-color: var(--back-overlay,rgb(0 0 0 / 70%));
-    height: 100%;
-    width: 100%;
-    z-index: -1; */
-  }
-  
+ 
    .ad p {
     color: white;
     font-size: 25px;
@@ -562,9 +494,6 @@ margin-top: 3rem;
     position: relative;
   }
   .portfolio .container ul {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     list-style: none;
     margin: 0 auto 4rem;
     max-width: 100%;
@@ -573,13 +502,12 @@ margin-top: 3rem;
     padding: .7rem;
     text-transform: capitalize;
   }
-  .portfolio .container ul li.all {
+ 
+  .portfolio .container ul li.active {
     background-color: var(--main-color,#19c8fa);
     color: white;
   }
   .portfolio .images {
-    /* display: grid; */
-    /* grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); */
     display: flex;
     flex-wrap: wrap;
   }
@@ -648,16 +576,9 @@ font-weight: lighter;
   /*start video*/
   .video {
     position: relative;
-    margin-top: var(--main-margin,6.5rem);
-    margin-bottom: var(--main-margin,6.5rem);
+    margin-top: var(--main-margin,4.5rem);
+    margin-bottom: var(--main-margin,4.5rem);
     overflow: hidden;
-  }
-  .video:before {
-    /* position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: var(--back-overlay); */
   }
   .video video {
     width: 100%;
@@ -672,10 +593,7 @@ font-weight: lighter;
     height: 250px;
     background-color: var(--transparent-color,rgb(15 116 143 / 70%));
     color: white;
-    /* display: flex; */
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
   }
   .video .contain h3 {
     text-transform: uppercase;
@@ -701,21 +619,15 @@ font-weight: lighter;
   /*end video*/
   /*start about*/
   .section-about {
-    background-image: url( "https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/stats.png");
+    /* background-image: url( "https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/stats.png"); */
+    background-image: url("./photps/stats.png");
+
     background-size: cover;
     position: relative;
     width: 100%;
     padding:5rem 0;
   }
-  .section-about::before {
-    /* content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: var(--back-overlay,rgb(0 0 0 / 70%)); */
-  }
+ 
   .about .containerImg{
     padding-right: 2.5rem;
   margin: 1rem auto -7.5rem;
@@ -735,18 +647,12 @@ font-weight: lighter;
   .section-about .container .main-cont {
     position: relative;
     background-color: var(--transparent-color,rgb(15 116 143 / 70%));
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     flex-wrap: wrap;
   }
   .section-about .container .main-cont ul {
-    /* display: flex; */
     flex-direction: column;
-    /* justify-content: center; */
     color: white;
     flex-wrap: wrap;
-    /* align-items: center; */
     padding: 2rem;
   }
  
@@ -773,9 +679,6 @@ font-weight: lighter;
     width: 2.5rem;
     height: 2.5rem;
     background-color: black;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     border-radius: 50%;
     font-size: 1.1rem;
   }
@@ -795,8 +698,8 @@ font-weight: lighter;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: var(--main-margin, 6.5rem);
-    margin-top: var(--main-margin, 6.5rem);
+    margin-bottom: var(--main-margin, 4.5rem);
+    margin-top: var(--main-margin, 4.5rem);
     gap: 0 6rem;
   }
   @media (min-width:992px) {
@@ -811,7 +714,7 @@ font-weight: lighter;
   }
 }
   .skills .container .box .head {
-    margin-bottom: var(--main-margin,6.5rem);
+    margin-bottom: var(--main-margin,4.5rem);
     text-align: center;
   }
   .skills .container .box .head h3 {
@@ -880,11 +783,7 @@ font-weight: lighter;
     font-size: .95rem;
     color:  var(--text-color,#888);
   }
-  .skills .box .shape {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-  }
+ 
   .skills .box .shape div {
     width:.85rem;
     height: .85rem;
@@ -894,15 +793,7 @@ font-weight: lighter;
   .skills .box .shape div {
     border: 1px solid  var(--text-color,#888);
   }
-  .skills .box .shape :nth-child(2) {
-    /* background-color: var(--main-color,#19c8fa); */
-    /* margin-left: 10px;
-    margin-right: 10px; */
-  }
-  /* .shape div.active{
-        background-color: var(--main-color,#19c8fa);
-        border-color: transparent;
-  } */
+ 
   .skills .container .box .skillsElement {
     text-align: left;
     margin-top: 0;
@@ -962,19 +853,12 @@ position: relative;
   /*end skills*/
   /*start awes  */
   .awes {
-    background-image: url("https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/quote.jpg");
+    /* background-image: url("https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/quote.jpg"); */
+    background-image: url("./photps/quote.jpg");
     background-size: cover;
     position: relative;
   }
-  .awes::before {
-    /* content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background-color: rgb(0 0 0 / 75%); */
-  }
+ 
   .awes .all q {
     font-size: 1.6rem;
   }
@@ -1003,10 +887,7 @@ position: relative;
   .pricing .container .section-pric .box .head-box {
     border-block: 1px solid var(--main-color);
     padding: 40px 50px 50px;
-    /* display: flex; */
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
   }
   .pricing .container .section-pric .box .head-box h3 {
     margin-top: 0;
@@ -1107,27 +988,17 @@ position: relative;
   /*end pricing*/
   /*start subscribe*/
   .subscribe {
-    margin-top: var(--main-margin,6.5rem);
+    margin-top: var(--main-margin,4.5rem);
     padding: 6.5rem 0;
-    background-image: url("   https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/subscribe.jpg");
+    /* background-image: url("   https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/subscribe.jpg"); */
+    background-image: url("./photps/subscribe.jpg");
     background-size: cover;
     text-align: center;
     position: relative;
   }
-  .subscribe::before {
-    /* content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: var(--back-overlay,rgb(0 0 0 / 70%)); */
-  }
+
   .subscribe .container {
     margin:0 auto;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
   gap:1.3rem;
     position: relative;
   }
@@ -1139,9 +1010,6 @@ position: relative;
   
   .subscribe .container form {
     border: 1px solid white;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     flex-basis: 45%;
   }
   @media (max-width:767.98px) {
@@ -1208,7 +1076,6 @@ position: relative;
   .contact {
     padding-top:  var(--main-padding, 1.25rem);
     padding-bottom:  var(--main-padding, 1.25rem);
-  
     margin-bottom: 100px;
   }
   .contact .container .section-cont {
@@ -1293,17 +1160,10 @@ font-style: italic;
     padding-top: 20px;
     background-size: cover;
     position: relative;
-    background-image: url('https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/subscribe.jpg');
+    /* background-image: url('https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/main/images/subscribe.jpg'); */
+    background-image: url('./photps/subscribe.jpg');
   }
-  footer::before {
-    /* content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: var(--back-overlay,rgb(0 0 0 / 70%)); */
-  }
+ 
   footer .container {
     padding: 2rem 0;
     position: relative;
@@ -1324,9 +1184,6 @@ font-style: italic;
   }
   footer .container .icons {
     color: white;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     margin-top: 30px;
     margin-bottom: 60px;
   }
