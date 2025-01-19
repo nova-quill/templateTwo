@@ -25,7 +25,6 @@ body {
   font-family: "Open Sans", sans-serif;
   caret-color: var(--main-color);
 }
-
 :root {
   --main-color: #19c8fa;
   --transparent-color: rgb(15 116 143 / 70%);
@@ -39,7 +38,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
 /* start component classes */
 .flex-justbetween-center {
   display: flex;
@@ -59,7 +57,6 @@ html {
   top: 0;
   left: 0;
 }
-
 .special-class {
   padding-bottom: 2rem;
   margin-bottom: 2rem;
@@ -125,7 +122,6 @@ html {
   background-color: var(--main-color, #19c8fa);
   border-color: transparent !important;
 }
-
 .container {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -135,7 +131,6 @@ html {
   margin-top: 0;
 }
 /* end component classes */
-
 .image {
   min-height: 100vh;
   background-image: url("./photps/landing.jpg");
@@ -165,7 +160,6 @@ html {
     border-color: white transparent transparent white;
     left: 2rem;
   }
-
   .image:after {
     border-color: transparent white white transparent;
     right: 2rem;
@@ -178,7 +172,6 @@ html {
   min-height: 5rem;
   position: relative;
 }
-
 .header .logo {
   height: 2.5rem;
   cursor: pointer;
@@ -208,7 +201,6 @@ html {
   .header .container ul.active {
     display: flex;
   }
-
   .header .container .form:hover span {
     background-color: lightgray;
   }
@@ -240,7 +232,6 @@ html {
   flex-direction: column;
   cursor: pointer;
 }
-
 @media (min-width: 768px) {
   .header .container .form {
     display: none;
@@ -257,7 +248,6 @@ html {
   -ms-border-radius: 1px;
   -o-border-radius: 1px;
 }
-
 .header .container ul li a {
   display: inline-block;
   color: inherit;
@@ -267,7 +257,6 @@ html {
 .header .container ul li a:hover {
   color: var(--main-color);
 }
-
 .header .container ul li.active {
   color: var(--main-color, #19c8fa);
   border-bottom: 0.06rem solid var(--main-color);
@@ -275,12 +264,10 @@ html {
 .header .container .formi {
   padding-right: 0.5rem;
 }
-
 .header .container .icon {
   width: 30px;
   height: 40px;
 }
-
 .header .container .icon1 {
   width: 0.13rem;
   height: 1.7rem;
@@ -334,7 +321,6 @@ html {
   bottom: 0;
   z-index: 1;
 }
-
 .landing {
   text-align: center;
   transform: translateY(-50%);
@@ -350,13 +336,11 @@ html {
     width: 50%;
   }
 }
-
 .landing .container {
   width: calc(100% + 0px);
   padding: 3rem;
   background-color: var(--transparent-color, rgb(15 116 143 / 70%));
 }
-
 .landing .container .content-landing {
   margin-left: auto;
   color: white;
@@ -368,7 +352,6 @@ html {
     max-width: 500px;
   }
 }
-
 .landing .container .content-landing h1 {
   margin-top: 0;
   font-size: 2rem;
@@ -405,12 +388,10 @@ html {
 .image .shape div {
   border: 1px solid white;
 }
-
 /*start services*/
 .services {
   padding-top: var(--main-padding, 1.25rem);
 }
-
 @media (min-width: 768px) {
   .services .container .content-services {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -422,7 +403,6 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
-
 @media (min-width: 768px) {
   .services .content-services .content {
     display: flex;
@@ -439,7 +419,6 @@ html {
 .services .content-services .content div {
   flex: 1;
 }
-
 .services .container .content-services .content h3 {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -505,7 +484,6 @@ html {
     display: none;
   }
 }
-
 .ad p {
   color: white;
   font-size: 25px;
@@ -519,7 +497,6 @@ html {
   display: flex;
   align-items: center;
 }
-
 .ad .content-ad .offer i {
   margin-right: 1rem;
   font-size: 1rem;
@@ -528,7 +505,6 @@ html {
   font-size: 1rem;
   font-weight: normal;
 }
-
 /* end ad */
 /*start portfolio*/
 .portfolio {
@@ -545,7 +521,6 @@ html {
   padding: 0.7rem;
   text-transform: capitalize;
 }
-
 .portfolio .container ul li.active {
   color: white;
   background-color: var(--main-color, #19c8fa);
@@ -562,7 +537,6 @@ html {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-
 @media (min-width: 768px) {
   .portfolio .images > div {
     flex-basis: 50%;
@@ -687,7 +661,6 @@ html {
   background-size: cover;
   position: relative;
 }
-
 .about .containerImg {
   width: fit-content;
   padding-right: 2.5rem;
@@ -703,7 +676,6 @@ html {
   margin-top: 0;
   margin-bottom: 0;
 }
-
 .section-about .container .main-cont {
   background-color: var(--transparent-color, rgb(15 116 143 / 70%));
   position: relative;
@@ -715,7 +687,6 @@ html {
   flex-direction: column;
   flex-wrap: wrap;
 }
-
 @media (min-width: 768px) {
   .section-about .container .main-cont ul {
     flex-basis: 50%;
@@ -792,7 +763,6 @@ html {
   font-weight: lighter;
   line-height: var(--main-line, 2);
 }
-
 .skills .container .box1 {
   margin-bottom: 2.5rem;
   position: relative;
@@ -848,7 +818,6 @@ html {
   font-size: 0.95rem;
   color: var(--text-color, #888);
 }
-
 .skills .box .shape div {
   width: 0.85rem;
   height: 0.85rem;
@@ -862,13 +831,11 @@ html {
 .skills .box .shape div {
   border: 1px solid var(--text-color, #888);
 }
-
 .skills .container .box .skillsElement {
   margin-top: 0;
   margin-bottom: 3rem;
   text-align: left;
 }
-
 .skills .container .box .skillsElement .element {
   margin-bottom: 2.5rem;
 }
@@ -929,7 +896,6 @@ html {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
 }
-
 /*end skills*/
 /*start awes  */
 .awes {
@@ -937,7 +903,6 @@ html {
   background-size: cover;
   position: relative;
 }
-
 .awes .all q {
   font-size: 1.6rem;
 }
@@ -954,7 +919,6 @@ html {
 }
 /*end quote&*/
 /*start pricing*/
-
 .pricing .container .section-pric {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1002,7 +966,6 @@ html {
   position: relative;
   right: -10px;
 }
-
 .pricing .container .section-pric .box .head-box sub {
   margin-left: 110px;
   font-size: 18px;
@@ -1014,7 +977,6 @@ html {
   padding-left: 0;
   text-align: center;
 }
-
 .pricing ul li {
   width: fit-content;
   padding-bottom: 20px;
@@ -1075,7 +1037,6 @@ html {
   text-align: center;
   position: relative;
 }
-
 .subscribe .container {
   margin: 0 auto;
   gap: 1.3rem;
@@ -1086,7 +1047,6 @@ html {
     flex-direction: column;
   }
 }
-
 .subscribe .container form {
   border: 1px solid white;
   flex-basis: 45%;
@@ -1110,7 +1070,6 @@ html {
   font-size: 1rem;
   text-transform: capitalize;
 }
-
 .subscribe .container form .cont-box i {
   padding: 0 1rem;
   color: white;
@@ -1207,7 +1166,6 @@ html {
   text-transform: uppercase;
   font-weight: normal;
 }
-
 .contact .container .section-cont .arriv p {
   color: #777;
   font-size: 1rem;
@@ -1237,7 +1195,6 @@ footer {
   background-image: url("./photps/subscribe.jpg");
   position: relative;
 }
-
 footer .container {
   padding: 2rem 0;
   margin: 0 auto;
@@ -1287,7 +1244,6 @@ footer span {
     font-size: 17px;
   }
 }
-
 @media (min-width: 992px) {
   .container {
     width: 970px;
