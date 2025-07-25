@@ -23,4 +23,7 @@ This simple and clean template is ideal for portfolios, product showcases, or pe
 Created with by Nova Quill
 If you like this template or want to collaborate, feel free to connect:
 
-GitHub:[@nova-quill](https://github.com/nova-quill)
+GitHub: [@nova-quill on github](https://github.com/nova-quill)
+
+LinkedIn: [@nova-quill on LinkedIn](https://www.linkedin.com/in/nova-quill)
+
